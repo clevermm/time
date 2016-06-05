@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <style type="text/css">
+      span.time {
+        font-size: 300px;
+        font-family: time;
+        color: white;
+      }
+      @font-face {
+        font-family: 'time';
+        src: url('./holojacketboldital.ttf') format('truetype');
+      }
+      body {
+        background-color: black;
+      }
+      h3 {
+        color: white;
+        font-size: 15px
+      }
+    </style>
+  </head>
+  <body>
+    <p><center>
+      <span id="show_time_1" class="time">
+<script language="JavaScript">
+function show_time_1(){
+ d=new Date();
+ H=d.getHours();H=(H<10)?"0"+H:H;
+ i=d.getMinutes();i=(i<10)?"0"+i:i;
+ s=d.getSeconds();s=(s<10)?"0"+s:s;
+ document.getElementById('show_time_1').innerHTML=H+":"+i+":"+s;
+ setTimeout("show_time_1()",1000);/* 1 sec */
+} show_time_1();
+</script>
+</span>
+      </p>
+      <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+      <p>
+        <h3>
+          copy right &copy;  -  2016 Negative
+    </h3>
+    </p>
+    </center>
+  </body>
+</html>
